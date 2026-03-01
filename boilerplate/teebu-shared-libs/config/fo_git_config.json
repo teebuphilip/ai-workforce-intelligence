@@ -1,0 +1,9 @@
+{
+  "github_token": "YOUR_FO_GITHUB_TOKEN_HERE",
+  "gitlab_token": "",
+  "git_user_name": "FO Builder",
+  "git_user_email": "fo-builder@founderops.com",
+  "account_name": "FounderOps LLC",
+  "log_level": "INFO",
+  "log_file": "git_operations.log"
+}

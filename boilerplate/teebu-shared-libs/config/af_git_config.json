@@ -1,0 +1,9 @@
+{
+  "github_token": "YOUR_AF_GITHUB_TOKEN_HERE",
+  "gitlab_token": "",
+  "git_user_name": "AF Builder",
+  "git_user_email": "af-builder@teebu.ventures",
+  "account_name": "Teebu Ventures LLC (AF Portfolio)",
+  "log_level": "INFO",
+  "log_file": "git_operations.log"
+}

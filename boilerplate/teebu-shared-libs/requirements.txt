@@ -1,0 +1,10 @@
+# AF/FO Library Requirements
+# Install with: pip install -r requirements.txt --break-system-packages
+
+stripe>=7.0.0
+requests>=2.31.0
+meilisearch>=0.21.0
+
+# Note: Git library requires 'git' command (install via system package manager)
+# Ubuntu/Debian: apt-get install git
+# macOS: brew install git (or use Xcode tools)

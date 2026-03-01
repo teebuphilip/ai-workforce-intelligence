@@ -1,0 +1,6 @@
+{
+  "mailerlite_api_key": "YOUR_FO_MAILERLITE_API_KEY_HERE",
+  "account_name": "FounderOps LLC",
+  "log_level": "INFO",
+  "log_file": "mailerlite_operations.log"
+}

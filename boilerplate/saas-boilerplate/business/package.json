@@ -1,0 +1,23 @@
+{
+  "name": "ai-workforce-intelligence-business",
+  "version": "1.0.0",
+  "description": "Business logic for AI Workforce Intelligence platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "dev": "node -e \"console.log('Business logic loaded')\""
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "keywords": ["ai", "workforce", "intelligence", "consulting"],
+  "author": "AI Workforce Intelligence Team",
+  "license": "MIT"
+}

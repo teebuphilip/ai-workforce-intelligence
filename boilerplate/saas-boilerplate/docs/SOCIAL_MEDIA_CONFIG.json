@@ -1,0 +1,66 @@
+{
+  "_comment": "Add this section to business_config.json for Tier 3 (Marketing)",
+  
+  "social_media": {
+    "reddit": {
+      "_comment": "Get credentials from https://www.reddit.com/prefs/apps",
+      "client_id": "YOUR_REDDIT_CLIENT_ID",
+      "client_secret": "YOUR_REDDIT_CLIENT_SECRET",
+      "username": "your_reddit_username",
+      "password": "your_reddit_password",
+      "user_agent": "YourBusinessName/1.0"
+    },
+    
+    "discord": {
+      "_comment": "Create webhook: Discord Channel Settings → Integrations → Webhooks",
+      "_comment2": "Webhook URL format: https://discord.com/api/webhooks/ID/TOKEN",
+      "webhook_url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+    },
+    
+    "twitter": {
+      "_comment": "Get credentials from https://developer.twitter.com/en/portal/dashboard",
+      "api_key": "YOUR_TWITTER_API_KEY",
+      "api_secret": "YOUR_TWITTER_API_SECRET",
+      "access_token": "YOUR_ACCESS_TOKEN",
+      "access_token_secret": "YOUR_ACCESS_TOKEN_SECRET",
+      "username": "your_twitter_handle"
+    },
+    
+    "linkedin": {
+      "_comment": "Use your LinkedIn login credentials (unofficial API)",
+      "username": "your_linkedin_email@example.com",
+      "password": "your_linkedin_password"
+    },
+    
+    "facebook": {
+      "_comment": "Get Page Access Token from https://developers.facebook.com/tools/explorer/",
+      "access_token": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN",
+      "page_id": "YOUR_FACEBOOK_PAGE_ID"
+    }
+  },
+  
+  "marketing": {
+    "_comment": "Tier 3 marketing configuration",
+    "_comment2": "Reddit is MANDATORY. All other platforms are optional.",
+    "_comment3": "Add credentials for each platform you want to use.",
+    
+    "enabled": true,
+    
+    "platforms": [
+      "reddit"
+    ],
+    
+    "platforms_available": {
+      "_comment": "Uncomment platforms below and add credentials above to enable them",
+      "reddit": "MANDATORY - always enabled",
+      "discord": "Optional - add discord.webhook_url above",
+      "twitter": "Optional - add twitter credentials above",
+      "linkedin": "Optional - add linkedin credentials above",
+      "facebook": "Optional - add facebook credentials above"
+    },
+    
+    "post_frequency": "daily",
+    "subreddits": ["fantasybball", "nbadiscussion"],
+    "content_strategy": "waiver_wire_tips"
+  }
+}

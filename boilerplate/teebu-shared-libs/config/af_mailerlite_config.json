@@ -1,0 +1,6 @@
+{
+  "mailerlite_api_key": "YOUR_AF_MAILERLITE_API_KEY_HERE",
+  "account_name": "Teebu Ventures LLC (AF Portfolio)",
+  "log_level": "INFO",
+  "log_file": "mailerlite_operations.log"
+}

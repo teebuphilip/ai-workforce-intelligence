@@ -1,0 +1,8 @@
+{
+  "ga4_measurement_id": "G-XXXXXXXXXX",
+  "ga4_api_secret": "YOUR_API_SECRET_HERE",
+  "account_name": "Your Business",
+  "log_level": "INFO",
+  "log_file": "analytics_operations.log",
+  "debug_mode": false
+}

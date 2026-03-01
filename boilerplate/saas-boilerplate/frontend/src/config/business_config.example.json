@@ -1,0 +1,118 @@
+{
+  "_comment": "business_config.example.json — template for heroes to copy to business_config.json.",
+  "_instructions": "Copy this file to business_config.json (gitignored) and fill in real values. Code never changes — only this config.",
+
+  "business": {
+    "name": "YourBusiness",
+    "tagline": "One-line sell",
+    "url": "https://yourdomain.com",
+    "support_email": "support@yourdomain.com"
+  },
+
+  "branding": {
+    "_comment": "Visual identity — drives all brand-colored UI elements automatically. Change primary_color and the whole app rebrands.",
+    "primary_color":    "#4F46E5",
+    "logo_url":         "",
+    "favicon_url":      "",
+    "company_name":     "YourBusiness"
+  },
+
+  "dashboard": {
+    "_comment": "Inner-app UX config. FO exposes these as a UI form so heroes never touch code.",
+    "theme":                "light",
+    "show_upgrade_banner":  true,
+    "nav_items": [
+      { "label": "Dashboard",    "path": "/dashboard",    "icon": "grid"    },
+      { "label": "Settings",     "path": "/settings",     "icon": "cog"     }
+    ],
+    "hero_support_url":     "",
+    "hero_docs_url":        ""
+  },
+
+  "metadata": {
+    "_comment": "Analytics and SEO. Google Analytics loads automatically when google_analytics_id is set.",
+    "analytics": {
+      "google_analytics_id":  ""
+    },
+    "seo": {
+      "title":       "YourBusiness — your tagline here",
+      "description": "Two-sentence description for search engines."
+    }
+  },
+
+  "stripe": {
+    "_comment": "Stripe Dashboard → Developers → API Keys",
+    "publishable_key": "pk_live_YOUR_KEY_HERE",
+    "secret_key":      "sk_live_YOUR_KEY_HERE",
+    "webhook_secret":  "whsec_YOUR_WEBHOOK_SECRET_HERE"
+  },
+
+  "stripe_products": {
+    "_comment": "Create products in Stripe, paste product IDs here. Pricing page renders these automatically.",
+    "_comment2": "Add as many plans as needed — pricing page grid adapts to plan count.",
+
+    "prod_REPLACE_WITH_STARTER_ID": {
+      "name": "Starter",
+      "description": "Perfect for individuals getting started",
+      "price_monthly": 9,
+      "price_annual": 86,
+      "annual_savings": "Save $22/year",
+      "popular": false,
+      "cta_text": "Get Started",
+      "stripe_price_id_monthly": "price_REPLACE_WITH_MONTHLY_PRICE_ID",
+      "stripe_price_id_annual":  "price_REPLACE_WITH_ANNUAL_PRICE_ID",
+      "features": [
+        "Feature one",
+        "Feature two",
+        "Email support"
+      ],
+      "limitations": [],
+      "entitlements": ["dashboard", "feature_one"]
+    },
+
+    "prod_REPLACE_WITH_PRO_ID": {
+      "name": "Pro",
+      "description": "For power users who want full automation",
+      "price_monthly": 29,
+      "price_annual": 278,
+      "annual_savings": "Save $70/year",
+      "popular": true,
+      "cta_text": "Start Pro Trial",
+      "stripe_price_id_monthly": "price_REPLACE_WITH_MONTHLY_PRICE_ID",
+      "stripe_price_id_annual":  "price_REPLACE_WITH_ANNUAL_PRICE_ID",
+      "features": [
+        "Everything in Starter",
+        "Unlimited usage",
+        "Priority support"
+      ],
+      "limitations": [],
+      "entitlements": ["dashboard", "feature_one", "feature_pro"]
+    }
+  },
+
+  "features": {
+    "_comment": "Documents what each entitlement key means. Used in UI and directives.",
+    "dashboard":    { "tier": 1, "label": "Dashboard",    "description": "Main application dashboard" },
+    "feature_one":  { "tier": 1, "label": "Feature One",  "description": "Description of feature one" },
+    "feature_pro":  { "tier": 2, "label": "Pro Feature",  "description": "Description of pro feature" }
+  },
+
+  "auth0": {
+    "_comment": "Auth0 Dashboard → Applications → Your App → Settings",
+    "domain":        "YOUR_AUTH0_DOMAIN.auth0.com",
+    "client_id":     "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "audience":      "https://YOUR_AUTH0_DOMAIN.auth0.com/api/v2/"
+  },
+
+  "mailerlite": {
+    "_comment": "MailerLite → Integrations → API",
+    "api_key":  "YOUR_MAILERLITE_API_KEY",
+    "group_id": "YOUR_GROUP_ID"
+  },
+
+  "marketing": {
+    "_comment": "Tier 3 marketing — disabled by default until hero configures social platforms",
+    "enabled": false
+  }
+}

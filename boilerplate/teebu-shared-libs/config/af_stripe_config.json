@@ -1,0 +1,7 @@
+{
+  "stripe_secret_key": "sk_live_YOUR_AF_KEY_HERE",
+  "stripe_webhook_secret": "whsec_YOUR_AF_WEBHOOK_SECRET_HERE",
+  "account_name": "Teebu Ventures LLC (AF Portfolio)",
+  "log_level": "INFO",
+  "log_file": "stripe_operations.log"
+}
