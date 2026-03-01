@@ -7,7 +7,6 @@
     }
   },
   "deploy": {
-    "type": "python",
-    "source": "saas-boilerplate/backend"
+    "command": "python main.py"
   }
 }
