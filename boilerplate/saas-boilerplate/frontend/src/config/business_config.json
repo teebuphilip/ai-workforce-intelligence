@@ -1,0 +1,171 @@
+{
+  "_comment": "business_config.json - Hero fills this in per business. Code never changes.",
+
+  "business": {
+    "name": "InboxTamer",
+    "tagline": "AI-powered email management",
+    "url": "https://inboxtamer.com",
+    "support_email": "support@inboxtamer.com"
+  },
+
+  "stripe": {
+    "publishable_key": "pk_live_YOUR_KEY_HERE",
+    "secret_key": "sk_live_YOUR_KEY_HERE",
+    "webhook_secret": "whsec_YOUR_WEBHOOK_SECRET_HERE"
+  },
+
+  "stripe_products": {
+    "_comment": "Hero creates products in Stripe, pastes product IDs here. Pricing page renders these automatically.",
+    "_comment2": "Add as many plans as needed - pricing page grid adapts to plan count.",
+
+    "prod_REPLACE_WITH_STARTER_ID": {
+      "name": "Starter",
+      "description": "Perfect for individuals getting started",
+      "price_monthly": 9,
+      "price_annual": 86,
+      "annual_savings": "Save $22/year",
+      "popular": false,
+      "cta_text": "Get Started",
+      "stripe_price_id_monthly": "price_REPLACE_WITH_MONTHLY_PRICE_ID",
+      "stripe_price_id_annual":  "price_REPLACE_WITH_ANNUAL_PRICE_ID",
+      "features": [
+        "Dashboard access",
+        "Up to 10 email rules",
+        "Gmail + Outlook sync",
+        "Email support"
+      ],
+      "limitations": [
+        "No AI sorting",
+        "No bulk actions"
+      ],
+      "entitlements": [
+        "dashboard",
+        "basic_rules",
+        "email_sync"
+      ]
+    },
+
+    "prod_REPLACE_WITH_PRO_ID": {
+      "name": "Pro",
+      "description": "For power users who want full automation",
+      "price_monthly": 29,
+      "price_annual": 278,
+      "annual_savings": "Save $70/year",
+      "popular": true,
+      "cta_text": "Start Pro Trial",
+      "stripe_price_id_monthly": "price_REPLACE_WITH_MONTHLY_PRICE_ID",
+      "stripe_price_id_annual":  "price_REPLACE_WITH_ANNUAL_PRICE_ID",
+      "features": [
+        "Everything in Starter",
+        "Unlimited email rules",
+        "AI-powered sorting",
+        "Bulk actions",
+        "Analytics dashboard",
+        "Priority support"
+      ],
+      "limitations": [],
+      "entitlements": [
+        "dashboard",
+        "basic_rules",
+        "email_sync",
+        "ai_sorting",
+        "bulk_actions",
+        "analytics"
+      ]
+    },
+
+    "prod_REPLACE_WITH_TEAMS_ID": {
+      "name": "Teams",
+      "description": "For teams that manage email together",
+      "price_monthly": 79,
+      "price_annual": 758,
+      "annual_savings": "Save $190/year",
+      "popular": false,
+      "cta_text": "Start Team Trial",
+      "stripe_price_id_monthly": "price_REPLACE_WITH_MONTHLY_PRICE_ID",
+      "stripe_price_id_annual":  "price_REPLACE_WITH_ANNUAL_PRICE_ID",
+      "features": [
+        "Everything in Pro",
+        "Up to 10 team members",
+        "Shared rule libraries",
+        "Admin controls",
+        "Full audit log",
+        "Dedicated support"
+      ],
+      "limitations": [],
+      "entitlements": [
+        "dashboard",
+        "basic_rules",
+        "email_sync",
+        "ai_sorting",
+        "bulk_actions",
+        "analytics",
+        "team_management",
+        "admin_controls",
+        "audit_log"
+      ]
+    }
+  },
+
+  "features": {
+    "_comment": "Documents what each entitlement means. Used in UI and directives.",
+
+    "dashboard":        { "tier": 1, "label": "Dashboard",         "description": "Main application dashboard" },
+    "basic_rules":      { "tier": 1, "label": "Basic Rules",        "description": "Create email filtering rules" },
+    "email_sync":       { "tier": 1, "label": "Email Sync",         "description": "Sync Gmail and Outlook" },
+    "ai_sorting":       { "tier": 2, "label": "AI Sorting",         "description": "AI-powered email categorization" },
+    "bulk_actions":     { "tier": 2, "label": "Bulk Actions",       "description": "Apply actions to multiple emails" },
+    "analytics":        { "tier": 2, "label": "Analytics",          "description": "Usage and performance analytics" },
+    "team_management":  { "tier": 2, "label": "Team Management",    "description": "Manage team members and permissions" },
+    "admin_controls":   { "tier": 2, "label": "Admin Controls",     "description": "Admin-level configuration" },
+    "audit_log":        { "tier": 2, "label": "Audit Log",          "description": "Full audit trail of all actions" }
+  },
+
+  "auth0": {
+    "domain": "YOUR_AUTH0_DOMAIN.auth0.com",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "audience": "https://YOUR_AUTH0_DOMAIN.auth0.com/api/v2/"
+  },
+
+  "mailerlite": {
+    "api_key": "YOUR_MAILERLITE_API_KEY",
+    "group_id": "YOUR_GROUP_ID"
+  },
+
+  "branding": {
+    "_comment": "Visual identity — drives all brand-colored UI elements automatically. Hero edits once; whole app rebrands.",
+    "primary_color":    "#4F46E5",
+    "logo_url":         "",
+    "favicon_url":      "",
+    "company_name":     "InboxTamer"
+  },
+
+  "dashboard": {
+    "_comment": "Configures the inner-app UX. FO exposes these as a UI form so heroes never touch code.",
+    "theme":                "light",
+    "show_upgrade_banner":  true,
+    "nav_items": [
+      { "label": "Dashboard",    "path": "/dashboard",    "icon": "grid"    },
+      { "label": "Settings",     "path": "/settings",     "icon": "cog"     }
+    ],
+    "hero_support_url":     "",
+    "hero_docs_url":        ""
+  },
+
+  "metadata": {
+    "_comment": "Analytics and SEO. Google Analytics loads automatically when google_analytics_id is set.",
+    "analytics": {
+      "google_analytics_id":  ""
+    },
+    "seo": {
+      "title":       "InboxTamer — AI-powered email management",
+      "description": "Tame your inbox with AI-powered rules and automation."
+    }
+  },
+
+  "marketing": {
+    "_comment": "Tier 3 marketing - disabled by default until hero configures social platforms",
+    "enabled": false
+  }
+}
