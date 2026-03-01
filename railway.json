@@ -8,5 +8,9 @@
   },
   "deploy": {
     "command": "python main.py"
-  }
+  },
+  "project": "ai-workforce-intelligence",
+  "project_id": "a56c846e-e943-4a2c-b927-3c24a9820d2e",
+  "service_id": "f58b7226-fc09-42e1-abc2-1e490f3d93bb",
+  "postgres_added": true
 }

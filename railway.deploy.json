@@ -1,0 +1,8 @@
+{
+  "project_name": "ai-workforce-intelligence",
+  "backend_path": "boilerplate/saas-boilerplate/backend",
+  "env": {
+    "DATABASE_URL": "your_database_url",
+    "API_KEY": "your_api_key"
+  }
+}
