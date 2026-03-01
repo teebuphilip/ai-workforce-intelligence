@@ -1,0 +1,15 @@
+{
+  "name": "ai-workforce-intelligence",
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "outputDirectory": "saas-boilerplate/frontend/build"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

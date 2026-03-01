@@ -1,0 +1,10 @@
+
+# Added by pipeline_deploy.py
+.env
+deploy_config.json
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+dist/
+build/
