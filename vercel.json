@@ -11,5 +11,7 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "project": "ai-workforce-intelligence-frontend",
+  "project_id": "prj_5H6yIzxKURDSXLyfV6zJjEoUKGzV"
 }
