@@ -22,7 +22,7 @@ export function loadBusinessPages() {
     // Use webpack's require.context to load all .jsx files from business/pages
     // Note: Path is relative to this file's location
     const businessPages = require.context(
-      '../../../../business/frontend/pages',
+      '../../../business/frontend/pages',
       false,
       /\.jsx$/
     );
@@ -41,7 +41,7 @@ export function loadBusinessPages() {
       
       // Lazy load the component
       const Component = lazy(() => import(
-        `../../../../business/frontend/pages/${fileName}.jsx`
+        `../../../business/frontend/pages/${fileName}.jsx`
       ));
       
       // Create route object
@@ -76,7 +76,7 @@ export function loadBusinessPages() {
 export function getLoadedBusinessPages() {
   try {
     const businessPages = require.context(
-      '../../../../business/frontend/pages',
+      '../../../business/frontend/pages',
       false,
       /\.jsx$/
     );
